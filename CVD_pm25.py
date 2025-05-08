@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Oct 12 08:25:35 2024
-
-@author: juand
-"""
-
 #version modules
 #dowhy==0.11.1
 #econml==0.15.1
@@ -178,7 +171,7 @@ hte_upper2_cons = hte_upper2_cons.ravel()
 ggplot()
   + aes(x=X_test, y=treatment_cont_marg)
   + geom_line()
-  + geom_ribbon(aes(ymin = hte_lower2_cons, ymax = hte_upper2_cons), alpha=0.1)
+  + geom_ribbon(aes(ymin = hte_lower2_cons, ymax = hte_upper2_cons), alpha=0.1, fill="blue")
   + labs(x='Temperature', y='Effect of high levels of PM2.5 on excess CVD deaths')
   + geom_hline(yintercept=0, color="red", linetype="dashed")
 )
@@ -279,7 +272,7 @@ hte_upper2_cons = hte_upper2_cons.ravel()
 ggplot()
   + aes(x=X_test, y=treatment_cont_marg)
   + geom_line()
-  + geom_ribbon(aes(ymin = hte_lower2_cons, ymax = hte_upper2_cons), alpha=0.1)
+  + geom_ribbon(aes(ymin = hte_lower2_cons, ymax = hte_upper2_cons), alpha=0.1, fill="blue")
   + labs(x='Temperature', y='Effect of high levels of PM2.5 on excess CVD deaths')
   + geom_hline(yintercept=0, color="red", linetype="dashed")
 )
@@ -380,7 +373,7 @@ hte_upper2_cons = hte_upper2_cons.ravel()
 ggplot()
   + aes(x=X_test, y=treatment_cont_marg)
   + geom_line()
-  + geom_ribbon(aes(ymin = hte_lower2_cons, ymax = hte_upper2_cons), alpha=0.1)
+  + geom_ribbon(aes(ymin = hte_lower2_cons, ymax = hte_upper2_cons), alpha=0.1, fill="blue")
   + labs(x='Temperature', y='Effect of high levels of PM2.5 on excess CVD deaths')
   + geom_hline(yintercept=0, color="red", linetype="dashed")
 )
@@ -481,13 +474,13 @@ hte_upper2_cons = hte_upper2_cons.ravel()
 ggplot()
   + aes(x=X_test, y=treatment_cont_marg)
   + geom_line()
-  + geom_ribbon(aes(ymin = hte_lower2_cons, ymax = hte_upper2_cons), alpha=0.1)
+  + geom_ribbon(aes(ymin = hte_lower2_cons, ymax = hte_upper2_cons), alpha=0.1, fill="blue")
   + labs(x='Temperature', y='Effect of high levels of PM2.5 on excess CVD deaths')
   + geom_hline(yintercept=0, color="red", linetype="dashed")
 )
 
 #%%
-#Figure ATE
+#Figure 1
 labs = ['PM2.5',
         'PM2.5 avg2',
         'PM2.5 avg5',
